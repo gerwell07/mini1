@@ -1,0 +1,125 @@
+/* navibation bar section */
+nav {
+  position: sticky;
+  top: 0;
+
+}
+nav {
+  /* default styling */
+  transition: top 500ms ease-in-out;
+}
+
+nav.scroll-up,
+nav:focus-within {
+  top: 0;
+}
+
+nav.scroll-down {
+  top: -100%;
+}
+.carousel-caption,h3 > p {
+  color: #fff;
+  text-align: start;
+  padding: 10px;
+  
+
+}
+
+
+.p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.award {
+  padding: 20px;
+  margin-top: 20px;
+}
+.award p {
+margin-top: 20px;
+
+}
+
+.activities {
+  justify-content: center;
+  text-align: start;
+  padding-bottom: 20px;
+  margin: auto;
+  padding: 20px;
+  
+}
+.col {
+  text-align: center;
+  padding: 30px 10px 0;
+}
+.col-image {
+  transition: all 0.5s ease-in-out;
+  width: 400px;
+  padding-bottom: 10px;
+}
+
+.container-img {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+}
+.container-img:hover > .col-image {
+  transform: scale(1.2); 
+}
+
+.chairman {
+  padding: 20px;
+  text-align: center;
+}
+
+@import "bootstrap";
+$mynewcolor:#77cccc;
+
+.btn-primary {
+  @include button-variant($mynewcolor#77cccc, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+}
+
+/* for responsive hero top margin height*/
+@media only screen and (min-height: 200px) and (max-height: 691px) {
+  #hero {
+    margin-top: 10vh;
+  }
+}
+@media only screen and (min-height: 691px) and (max-height: 840px) {
+  #hero {
+    margin-top: 8vh;
+  }
+}
+@media only screen and (min-height: 841px) and (max-height: 1080px) {
+  #hero {
+    margin-top: 7vh;
+  }
+}
+@media only screen and (min-height: 841px) {
+  #hero {
+    margin-top: 6vh;
+  }
+}
+/* for responsive footer */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  #footer .row > * {
+    text-align: center;
+  }
+  .footer-logo {
+    padding-top: 1.5rem;
+  }
+  .footer-search {
+    padding: 0 3rem;
+  }
+  #footer ul > li {
+    margin-bottom: 0.5rem;
+  }
+  #footer .row > h3 {
+    margin-top: 0.5rem;
+  }
+}
